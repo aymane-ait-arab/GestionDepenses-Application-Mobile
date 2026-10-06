@@ -32,7 +32,11 @@ USER → ACTIVITY (UI) → VIEWMODEL (LiveData) → REPOSITORY → FIREBASE (Aut
          ↑ Observe/Update        ↑ Request/LiveData      ↑ API/Data
 ```
 
-<img width="447" height="764" alt="_Présentation projet entreprise moderne simple" src="https://github.com/user-attachments/assets/257bc3f4-7e33-439d-8996-6136582fbab2" />
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/257bc3f4-7e33-439d-8996-6136582fbab2" alt="Présentation projet entreprise moderne simple" width="100%" />
+
+</div>
 
 
 - **Interface (View):** Activities & Fragments display the UI — what the user sees.
