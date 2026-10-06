@@ -34,7 +34,7 @@ USER → ACTIVITY (UI) → VIEWMODEL (LiveData) → REPOSITORY → FIREBASE (Aut
 
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/257bc3f4-7e33-439d-8996-6136582fbab2" alt="Présentation projet entreprise moderne simple" width="50%" />
+<img src="https://github.com/user-attachments/assets/257bc3f4-7e33-439d-8996-6136582fbab2" alt="Présentation projet entreprise moderne simple" width="25%" />
 
 </div>
 
