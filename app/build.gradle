@@ -1,0 +1,79 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services' // AJOUTER CETTE LIGNE POUR FIREBASE
+}
+
+android {
+    namespace 'com.example.gestiondepenses'
+    compileSdk 34 // (Ou 33/35 selon ta version)
+
+    // Load API keys from local.properties (add GROQ_API_KEY=xxx and GEMINI_API_KEY=xxx)
+    def localProperties = new Properties()
+    def localPropertiesFile = rootProject.file('local.properties')
+    if (localPropertiesFile.exists()) {
+        localProperties.load(new FileInputStream(localPropertiesFile))
+    }
+
+    defaultConfig {
+        applicationId "com.example.gestiondepenses"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "GROQ_API_KEY", "\"${localProperties.getProperty('GROQ_API_KEY', '')}\""
+        buildConfigField "String", "GEMINI_API_KEY", "\"${localProperties.getProperty('GEMINI_API_KEY', '')}\""
+    }
+
+    // AJOUTER CECI POUR LES FONCTIONNALITÉS JAVA 8
+    compileOptions {
+        // Remplace VERSION_1_8 par VERSION_17 ici :
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // --- 1. ROOM (Base de données) ---
+    //implementation 'androidx.room:room-runtime:2.6.1'
+    //annotationProcessor 'androidx.room:room-compiler:2.6.1'
+
+    // --- 2. VIEWMODEL & LIVEDATA (Architecture MVVM) ---
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.6.2'
+
+    // --- 3. MPANDROIDCHART (Graphiques) ---
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation("com.google.firebase:firebase-firestore:24.10.0") // Ou la version suggérée par Android Studio
+
+    // --- 4. FIREBASE (Auth) ---
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
+    implementation 'com.google.firebase:firebase-auth'
+
+
+
+    implementation 'com.itextpdf:itext7-core:7.2.5'
+
+
+    // Google Gemini AI
+    implementation 'com.google.ai.client.generativeai:generativeai:0.7.0'
+
+    // JSON parsing for AI response
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    // OkHttp for network (if needed)
+
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+}

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Gestion Dépenses</string>
+
+    <string name="action_settings">Paramètres</string>
+
+
+
+    <string name="new_category_detected">Nouvelle catégorie détectée</string>
+    <string name="category_not_exist">La catégorie \"%s\" n\'existe pas encore.</string>
+    <string name="add_category_prompt">Voulez-vous l\'ajouter pour \"%s\" ?</string>
+    <string name="add">Ajouter</string>
+    <string name="choose_existing">Choisir existante</string>
+</resources>

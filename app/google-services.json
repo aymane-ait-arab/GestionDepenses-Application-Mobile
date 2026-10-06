@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "240151275242",
+    "project_id": "projetdevmob-e067d",
+    "storage_bucket": "projetdevmob-e067d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240151275242:android:c9c08e5e03bf0a1d2a9993",
+        "android_client_info": {
+          "package_name": "com.example.gestiondepenses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240151275242-eenp7mcof560uj33b24bs2sh4bbv9nqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDny-mkalC3FfqUfixxNF3Vg1xO4z7p008"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240151275242-eenp7mcof560uj33b24bs2sh4bbv9nqt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

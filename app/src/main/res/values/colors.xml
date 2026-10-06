@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F4F5F7</color> <!-- Gris très clair, look Apple/FinTech -->
+    <color name="surface">#FFFFFF</color> <!-- Blanc pur pour les cartes -->
+    <color name="surface_container">#E5E7EB</color> <!-- Container background -->
+    <color name="surface_variant">#EAECEF</color> <!-- Gris doux pour la barre de recherche -->
+
+    <!-- Primary Colors - Noir élégant pour les actions -->
+    <color name="primary">#111827</color> <!-- Noir/Gris très profond -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_primary_variant">#B3FFFFFF</color> <!-- 70% white for subtitles -->
+    <color name="primary_container">#F3F4F6</color>
+    <color name="on_primary_container">#111827</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary">#6B7280</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#E5E7EB</color>
+    <color name="on_secondary_container">#374151</color>
+
+    <!-- Error Colors -->
+    <color name="error">#EF4444</color>
+    <color name="error_container">#FEE2E2</color>
+
+    <!-- Text Colors -->
+    <color name="on_surface">#111827</color> <!-- Texte principal presque noir -->
+    <color name="on_surface_variant">#6B7280</color> <!-- Texte secondaire gris -->
+    <color name="outline">#D1D5DB</color>
+    <color name="outline_variant">#F3F4F6</color>
+
+    <!-- Amount Colors -->
+    <color name="amount_expense">#111827</color> <!-- Les montants en noir élégant -->
+    <color name="amount_income">#10B981</color> <!-- Vert moderne pour les rentrées -->
+
+    <!-- Legacy compatibility -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="grey">#CCCCCC</color>
+    <color name="red_error">#B00020</color>
+</resources>
